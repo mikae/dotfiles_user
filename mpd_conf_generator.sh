@@ -32,9 +32,9 @@ EOF
 }
 
 function make_necessary_files {
-    touch $MUSIC_DIR
-    touch $MPD_ROOT
-    touch $MPD_PLAYLIST_DIR
+    mkdir $MUSIC_DIR
+    mkdir $MPD_ROOT
+    mkdir $MPD_PLAYLIST_DIR
 
     touch $MPD_DB
     touch $MPD_LOG
