@@ -1,0 +1,28 @@
+echomsg ".vimperatorrc is loading"
+
+" Source before-configuration init file
+source ~/before.vimperatorrc
+
+" Tab navigation {
+" Normal mode
+nnoremap <C-l>   gt
+nnoremap <C-h>   gT
+nnoremap <C-S-h> g0
+nnoremap <C-S-l> g$
+" }
+
+" Insert mode {
+inoremap <C-l>   <Esc>gt
+inoremap <C-h>   <Esc>gT
+inoremap <C-S-h> <Esc>g0
+inoremap <C-S-l> <Esc>g$
+" }
+" }
+
+" Emacs-like ex-mode
+nnoremap <A-:> :
+
+" Fast reload vimperator config
+nnoremap <C-,>r :source ~/.vimperatorrc<CR>
+
+echomsg ".vimperatorrc loaded"
