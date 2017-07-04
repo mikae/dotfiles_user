@@ -67,3 +67,4 @@ echo_cyan "other configs"
 cp -Rv user_home/.config ~
 cp -Rv user_home/.Xresources ~
 cp -Rv user_home/.jsbeautifyrc ~
+cp -Rv user_home/.vimperatorrc ~
