@@ -1,0 +1,191 @@
+" Begin
+echomsg "mappings.vimperatorrc is loading"
+
+" Tab {
+nnoremap <C-t>k gt
+nnoremap <C-t>j gT
+nnoremap <C-t>J g0
+nnoremap <C-t>K g$
+nnoremap <C-t>n :tabopen 
+nnoremap <C-t>c :tabduplicate<Cr>
+nnoremap <C-t>d :tabclose<CR>
+nnoremap <C-t>l :buffers<CR>
+nnoremap <C-t>t :tab 
+nnoremap <C-t>s :tabdetach<CR>
+
+" Select tabs
+nnoremap <C-t>1  1gt
+nnoremap <C-t>2  2gt
+nnoremap <C-t>3  3gt
+nnoremap <C-t>4  4gt
+nnoremap <C-t>5  5gt
+nnoremap <C-t>6  6gt
+nnoremap <C-t>7  7gt
+nnoremap <C-t>8  8gt
+nnoremap <C-t>9  9gt
+nnoremap <C-t>0 10gt
+"}
+
+" Window {
+nnoremap <C-w>n :winopen 
+nnoremap <C-w>q :winclose<CR>
+nnoremap <C-w>Q :wqall<CR>
+nnoremap <C-w>o :winonly<CR>
+nnoremap <C-w>w :window 
+"}
+
+" Page {
+nnoremap <C-p>h :back<CR>
+nnoremap <C-p>l :forward<CR>
+nnoremap <C-p>p gu
+nnoremap <C-p>P gU
+nnoremap <C-p>H gH
+nnoremap <C-p>c :stop<CR>
+nnoremap <C-p>C :stopall<CR>
+nnoremap <C-p>r :reload<CR>
+nnoremap <C-p>R :reload<CR>
+nnoremap <C-p>s :saveas! 
+"}
+
+" Movements {
+nnoremap <A-g> gg
+nnoremap <A-S-g> G
+
+nnoremap <A-h> 0
+nnoremap <A-l> $
+
+nnoremap <A-d> <C-d>
+nnoremap <A-u> <C-u>
+nnoremap <A-b> <C-b>
+nnoremap <A-f> <C-f>
+
+nnoremap <A-p> %
+
+nnoremap h h
+nnoremap j j
+nnoremap k k
+nnoremap l l
+"}
+
+" Jumps {
+nnoremap <A-.>  <Tab>
+nnoremap <A-,>  <S-Tab>
+
+nnoremap <C-j>b <C-o>
+nnoremap <C-j>f <C-i>
+" }
+
+" Zooming {
+nnoremap zi zi
+nnoremap zo zo
+nnoremap zz zs
+"}
+
+" Copying {
+nnoremap y y
+" }
+
+" Global {
+nnoremap <C-x><C-q>   :quit<CR>
+nnoremap <C-x><C-S-q> :quitall<CR>
+" }
+
+" Hints {
+nnoremap f f
+nnoremap F F
+nnoremap ; ;
+"}
+
+" History {
+nnoremap u :back<CR>
+nnoremap U :forward<CR>
+nnoremap H :history<CR>
+"}
+
+" Search {
+nnoremap /         /
+nnoremap ?         ?
+nnoremap <A-n>     n
+nnoremap <A-S-n>   N
+nnoremap <A-*>     *
+nnoremap <A-#>     #
+nnoremap <A-Space> :nohlsearch<CR>
+"}
+
+" Bookmarks {
+nnoremap <C-b>n    :bmark!<CR>
+nnoremap <C-b>N    :bmark 
+nnoremap <C-b>t    A
+nnoremap <C-b>l    :bmarks<CR>
+nnoremap <C-b>d    :delbmarks 
+"}
+
+" Repeating {
+nnoremap . .
+nnoremap , @:
+"}
+
+" Macro {
+nnoremap q      q
+nnoremap <C-m>l :macros<CR>
+nnoremap <C-m>L :macros 
+nnoremap <C-m>p :play 
+nnoremap @      @
+nnoremap @@     @@
+"}
+
+" Printing {
+nnoremap <C-,>pp :hardcopy<CR>
+nnoremap <C-,>PP :hardcopy!<CR>
+nnoremap <C-,>pf :hardcopy<CR>
+nnoremap <C-,>Pf :hardcopy!<CR>
+"}
+
+" Dialogs {
+nnoremap <C-Space>dad :tabopen<CR>:addons<CR>
+nnoremap <C-Space>dab :tabopen<CR>:dialog about<CR>
+nnoremap <C-Space>dco :tabopen<CR>:dialog console<CR>
+nnoremap <C-Space>ddo :tabopen<CR>:dialog downloads<CR>
+nnoremap <C-Space>dct :tabopen<CR>:dialog customizetoolbar<CR>
+nnoremap <C-Space>ddi :tabopen<CR>:dialog dominspector<CR>
+nnoremap <C-Space>dhi :tabopen<CR>:dialog dominspector<CR>
+nnoremap <C-Space>dps :tabopen<CR>:dialog pagesource<CR>
+nnoremap <C-Space>dpe :tabopen<CR>:dialog preferences<CR>
+nnoremap <C-Space>dex :tabopen<CR>:extensions<CR>
+"}
+
+" Command line {
+" Emacs-like ex
+nnoremap <A-:>      :
+
+" Exit from command line
+cnoremap <C-,><C-j> <C-c>
+
+" Completion
+cnoremap <A-l>      <Tab>
+
+" Recall last commands from command history
+cnoremap <A-k>      <S-Up>
+cnoremap <A-j>      <S-Down>
+
+" Recall last commands from command history that matches string
+cnoremap <A-S-k>    <Up>
+cnoremap <A-S-j>    <Down>
+"}
+
+" Insert mode {
+" Esc-alternative in insert mode
+inoremap <C-,><C-j> <Esc>
+
+inoremap <C-i>      <C-i>
+"}
+
+" Fast reload vimperator config
+nnoremap <C-,>r :source ~/.vimperatorrc<CR>
+
+" Restart firefox
+nnoremap <C-,>R :restart<CR>
+
+
+echomsg "mappings.vimperatorrc loaded"
+" End

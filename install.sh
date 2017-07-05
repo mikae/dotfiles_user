@@ -63,8 +63,13 @@ bash ./git_config_generator.sh
 echo_cyan "redshift"
 bash ./redshift_config_generator.sh
 
-echo_cyan "other configs"
-cp -Rv user_home/.config ~
-cp -Rv user_home/.Xresources ~
-cp -Rv user_home/.jsbeautifyrc ~
+echo_cyan "vimperator"
+SOURCE_VIMPERATOR_COLORS=https://github.com/mikae/vimperator-colors
 cp -Rv user_home/.vimperatorrc ~
+cp -Rv user_home/.vimperator   ~
+git clone $SOURCE_VIMPERATOR_COLORS ~/.vimperator/colors
+
+echo_cyan "other configs"
+cp -Rv user_home/.config       ~
+cp -Rv user_home/.Xresources   ~
+cp -Rv user_home/.jsbeautifyrc ~
