@@ -68,8 +68,8 @@ nnoremap l l
 "}
 
 " Jumps {
-nnoremap <A-.>  <Tab>
-nnoremap <A-,>  <S-Tab>
+nnoremap <A-.> <Tab>
+nnoremap <A-,> <S-Tab>
 
 nnoremap <C-j>b <C-o>
 nnoremap <C-j>f <C-i>
@@ -113,11 +113,11 @@ nnoremap <A-Space> :nohlsearch<CR>
 "}
 
 " Bookmarks {
-nnoremap <C-b>n    :bmark!<CR>
-nnoremap <C-b>N    :bmark 
-nnoremap <C-b>t    A
-nnoremap <C-b>l    :bmarks<CR>
-nnoremap <C-b>d    :delbmarks 
+nnoremap <C-b>n :bmark!<CR>
+nnoremap <C-b>N :bmark 
+nnoremap <C-b>t A
+nnoremap <C-b>l :bmarks<CR>
+nnoremap <C-b>d :delbmarks 
 "}
 
 " Repeating {
