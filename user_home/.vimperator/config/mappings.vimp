@@ -13,6 +13,7 @@ nnoremap <C-t>d :tabclose<CR>
 nnoremap <C-t>l :buffers<CR>
 nnoremap <C-t>t :tab 
 nnoremap <C-t>s :tabdetach<CR>
+nnoremap <C-t>o :tabonly<CR>
 
 " Select tabs
 nnoremap <C-t>1  1gt
