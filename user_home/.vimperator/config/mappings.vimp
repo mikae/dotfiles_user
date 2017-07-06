@@ -153,7 +153,6 @@ nnoremap <C-Space>ddi :tabopen<CR>:dialog dominspector<CR>
 nnoremap <C-Space>dhi :tabopen<CR>:dialog dominspector<CR>
 nnoremap <C-Space>dps :tabopen<CR>:dialog pagesource<CR>
 nnoremap <C-Space>dpe :tabopen<CR>:dialog preferences<CR>
-nnoremap <C-Space>dex :tabopen<CR>:extensions<CR>
 "}
 
 " Command line {
@@ -180,6 +179,22 @@ cnoremap <A-S-j>    <Down>
 inoremap <C-,><C-j> <Esc>
 
 inoremap <C-i>      <C-i>
+
+" Alternative to arrows
+inoremap <A-h>      <Left>
+inoremap <A-j>      <Down>
+inoremap <A-k>      <Up>
+inoremap <A-l>      <Right>
+inoremap <A-S-h>    <Home>
+inoremap <A-S-l>    <End>
+
+" Disable arrow, home and end keys
+inoremap <Up>       <nop>
+inoremap <Right>    <nop>
+inoremap <Down>     <nop>
+inoremap <Left>     <nop>
+inoremap <Home>     <nop>
+inoremap <End>      <nop>
 "}
 
 " Caret mode {
