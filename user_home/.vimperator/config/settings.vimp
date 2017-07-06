@@ -1,6 +1,7 @@
 " Begin
 echomsg "settings.vimperatorrc is loading"
 
+
 " Titlestring
 set titlestring=Firefox
 
@@ -9,6 +10,11 @@ set editor=emacs
 
 " Status line
 set status=input,position,zoomlevel,location,tabcount,bookmark,ssl
+
+" Complete
+set complete=bhs
+
+set hintchars=abcdefghijklmnopqrstuvwxyz
 
 echomsg "settings.vimperatorrc loaded"
 " End
