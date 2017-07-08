@@ -15,6 +15,19 @@ nnoremap <C-t>t :tab
 nnoremap <C-t>s :tabdetach<CR>
 nnoremap <C-t>o :tabonly<CR>
 
+inoremap <C-t>k <Esc>gt
+inoremap <C-t>j <Esc>gT
+inoremap <C-t>J <Esc>g0
+inoremap <C-t>K <Esc>g$
+inoremap <C-t>n <Esc>:tabopen 
+inoremap <C-t>N <Esc>:tabopen<CR>
+inoremap <C-t>c <Esc>:tabduplicate<CR>
+inoremap <C-t>d <Esc>:tabclose<CR>
+inoremap <C-t>l <Esc>:buffers<CR>
+inoremap <C-t>t <Esc>:tab 
+inoremap <C-t>s <Esc>:tabdetach<CR>
+inoremap <C-t>o <Esc>:tabonly<CR>
+
 " Select tabs
 nnoremap <C-t>1  1gt
 nnoremap <C-t>2  2gt
@@ -26,6 +39,17 @@ nnoremap <C-t>7  7gt
 nnoremap <C-t>8  8gt
 nnoremap <C-t>9  9gt
 nnoremap <C-t>0 10gt
+
+inoremap <C-t>1 <Esc>1gt
+inoremap <C-t>2 <Esc>2gt
+inoremap <C-t>3 <Esc>3gt
+inoremap <C-t>4 <Esc>4gt
+inoremap <C-t>5 <Esc>5gt
+inoremap <C-t>6 <Esc>6gt
+inoremap <C-t>7 <Esc>7gt
+inoremap <C-t>8 <Esc>8gt
+inoremap <C-t>9 <Esc>9gt
+inoremap <C-t>0 <Esc>10gt
 "}
 
 " Window {
@@ -34,6 +58,12 @@ nnoremap <C-w>q :winclose<CR>
 nnoremap <C-w>Q :wqall<CR>
 nnoremap <C-w>o :winonly<CR>
 nnoremap <C-w>w :window 
+
+inoremap <C-w>n <Esc>:winopen 
+inoremap <C-w>q <Esc>:winclose<CR>
+inoremap <C-w>Q <Esc>:wqall<CR>
+inoremap <C-w>o <Esc>:winonly<CR>
+inoremap <C-w>w <Esc>:window 
 "}
 
 " Page {
@@ -48,6 +78,18 @@ nnoremap <C-p>r :reload<CR>
 nnoremap <C-p>R :reload<CR>
 nnoremap <C-p>s :saveas! 
 nnoremap <C-p>n :open 
+
+inoremap <C-p>h <Esc>:back<CR>
+inoremap <C-p>l <Esc>:forward<CR>
+inoremap <C-p>p <Esc>gu
+inoremap <C-p>P <Esc>gU
+inoremap <C-p>H <Esc>gH
+inoremap <C-p>c <Esc>:stop<CR>
+inoremap <C-p>C <Esc>:stopall<CR>
+inoremap <C-p>r <Esc>:reload<CR>
+inoremap <C-p>R <Esc>:reload<CR>
+inoremap <C-p>s <Esc>:saveas! 
+inoremap <C-p>n <Esc>:open 
 "}
 
 " Movements {
@@ -121,6 +163,12 @@ nnoremap <C-,>bN :bmark
 nnoremap <C-,>bt A
 nnoremap <C-,>bl :bmarks<CR>
 nnoremap <C-,>bd :delbmarks 
+
+inoremap <C-,>bn <Esc>:bmark!<CR>
+inoremap <C-,>bN <Esc>:bmark 
+inoremap <C-,>bt <Esc>A
+inoremap <C-,>bl <Esc>:bmarks<CR>
+inoremap <C-,>bd <Esc>:delbmarks 
 "}
 
 " Repeating {
@@ -138,10 +186,8 @@ nnoremap @@     @@
 "}
 
 " Printing {
-nnoremap <C-,>pp :hardcopy<CR>
-nnoremap <C-,>PP :hardcopy!<CR>
-nnoremap <C-,>pf :hardcopy<CR>
-nnoremap <C-,>Pf :hardcopy!<CR>
+nnoremap <C-,>p :hardcopy<CR>
+nnoremap <C-,>P :hardcopy!<CR>
 "}
 
 " Dialogs {
@@ -213,10 +259,10 @@ inoremap <C-c>v <C-v>
 " }
 
 " Fast reload vimperator config
-nnoremap <C-,>r :source ~/.vimperatorrc<CR>
+nnoremap <C-x><C-r> :source ~/.vimperatorrc<CR>
 
 " Restart firefox
-nnoremap <C-,>R :restart<CR>
+nnoremap <C-x><C-S-r> :restart<CR>
 
 echomsg "mappings.vimperatorrc loaded"
 " End
