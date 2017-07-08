@@ -47,6 +47,7 @@ nnoremap <C-p>C :stopall<CR>
 nnoremap <C-p>r :reload<CR>
 nnoremap <C-p>R :reload<CR>
 nnoremap <C-p>s :saveas! 
+nnoremap <C-p>n :open 
 "}
 
 " Movements {
@@ -205,12 +206,17 @@ cnoremap <C-,><C-j> <Esc>
 vnoremap <C-,><C-j> <Esc>
 "}
 
+" Copy-pasting {
+inoremap <C-c>c <C-c>
+inoremap <C-c>x <C-x>
+inoremap <C-c>v <C-v>
+" }
+
 " Fast reload vimperator config
 nnoremap <C-,>r :source ~/.vimperatorrc<CR>
 
 " Restart firefox
 nnoremap <C-,>R :restart<CR>
-
 
 echomsg "mappings.vimperatorrc loaded"
 " End
