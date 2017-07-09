@@ -113,9 +113,6 @@ nnoremap l l
 "}
 
 " Jumps {
-nnoremap <A-.> <Tab>
-nnoremap <A-,> <S-Tab>
-
 nnoremap <C-j>b <C-o>
 nnoremap <C-j>f <C-i>
 " }
@@ -131,8 +128,8 @@ nnoremap y y
 " }
 
 " Global {
-nnoremap <C-x><C-q>   :quit<CR>
-nnoremap <C-x><C-S-q> :quitall<CR>
+nnoremap <C-,><C-q>   :quit<CR>
+nnoremap <C-,><C-S-q> :quitall<CR>
 " }
 
 " Hints {
@@ -224,24 +221,6 @@ cnoremap <A-S-j>    <Down>
 " Insert mode {
 " Esc-alternative in insert mode
 inoremap <C-,><C-j> <Esc>
-
-inoremap <C-i>      <C-i>
-
-" Alternative to arrows
-inoremap <A-h>      <Left>
-inoremap <A-j>      <Down>
-inoremap <A-k>      <Up>
-inoremap <A-l>      <Right>
-inoremap <A-S-h>    <Home>
-inoremap <A-S-l>    <End>
-
-" Disable arrow, home and end keys
-inoremap <Up>       <nop>
-inoremap <Right>    <nop>
-inoremap <Down>     <nop>
-inoremap <Left>     <nop>
-inoremap <Home>     <nop>
-inoremap <End>      <nop>
 "}
 
 " Caret mode {
@@ -253,16 +232,16 @@ vnoremap <C-,><C-j> <Esc>
 "}
 
 " Copy-pasting {
-inoremap <C-c>c <C-c>
-inoremap <C-c>x <C-x>
-inoremap <C-c>v <C-v>
+inoremap <C-c> <C-c>
+inoremap <C-v> <C-v>
+inoremap <C-x> <C-x>
 " }
 
 " Fast reload vimperator config
-nnoremap <C-x><C-r> :source ~/.vimperatorrc<CR>
+nnoremap <C-,><C-r> :source ~/.vimperatorrc<CR>
 
 " Restart firefox
-nnoremap <C-x><C-S-r> :restart<CR>
+nnoremap <C-,><C-S-r> :restart<CR>
 
 echomsg "mappings.vimperatorrc loaded"
 " End
