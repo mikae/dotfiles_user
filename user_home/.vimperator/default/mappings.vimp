@@ -7,7 +7,7 @@ nnoremap w     <nop>
 nnoremap e     <nop>
 nnoremap r     <nop>
 nnoremap t     <nop>
-nnoremap y     <nop>
+" "nnoremap y     <nop>
 nnoremap u     <nop>
 nnoremap i     <nop>
 nnoremap o     <nop>
@@ -23,8 +23,8 @@ nnoremap k     <nop>
 nnoremap l     <nop>
 nnoremap z     <nop>
 nnoremap x     <nop>
-nnoremap c     <nop>
-nnoremap v     <nop>
+" "nnoremap c     <nop>
+" "nnoremap v     <nop>
 nnoremap b     <nop>
 nnoremap n     <nop>
 nnoremap m     <nop>
