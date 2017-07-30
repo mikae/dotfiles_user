@@ -1,7 +1,1 @@
-" Begin
-echomsg ".vimperatorrc is loading"
-
 source ~/.vimperator/config.vimp
-
-echomsg ".vimperatorrc loaded"
-" End
