@@ -62,6 +62,9 @@ nnoremap <C-p>c :open
 inoremap <C-p>r <Esc>:reload<CR>
 inoremap <C-p>s <Esc>:saveas! 
 inoremap <C-p>c <Esc>:open 
+
+nnoremap u :back<CR>
+nnoremap U :forward<CR>
 "}
 
 " Movements {
@@ -91,7 +94,7 @@ nnoremap <C-z>n zo
 "}
 
 " Copying {
-nnoremap x y
+"nnoremap x y
 " }
 
 " Global {
@@ -163,7 +166,7 @@ cnoremap x     y
 
 " Command line {
 " Ex
-nnoremap <M-a>      :
+nnoremap <M-s>      :
 
 " Exit from command line
 cnoremap <C-,><C-j> <C-c>
