@@ -13,7 +13,7 @@ URxvt.matcher.button: 1
 
 ! Cursor
 Xcursor.theme: Pulse-Glass-Sapphire-Regular
-Xcursor.size: 16
+Xcursor.size: 32
 
 ! Font
 URxvt*font: xft:DejaVu Sans Mono:style=Oblique:size=12
