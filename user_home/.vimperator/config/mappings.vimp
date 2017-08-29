@@ -161,7 +161,6 @@ cnoremap <A-n> h
 cnoremap <A-e> j
 cnoremap <A-i> k
 cnoremap <A-o> l
-cnoremap x     y
 " }
 
 " Command line {
