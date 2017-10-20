@@ -54,9 +54,6 @@ bash ./smplayer_config_generator.sh
 echo_cyan "transmission"
 bash ./transmission_daemon_conf_generator.sh
 
-echo_cyan "alsa"
-bash ./alsa_conf_generator.sh
-
 echo_cyan "git"
 bash ./git_config_generator.sh
 
@@ -69,8 +66,11 @@ cp -Rv user_home/.vimperatorrc ~
 cp -Rv user_home/.vimperator   ~
 git clone $SOURCE_VIMPERATOR_COLORS ~/.vimperator/colors
 
+
 echo_cyan "other configs"
 cp -Rv user_home/.config       ~
 cp -Rv user_home/.Xresources   ~
 cp -Rv user_home/.jsbeautifyrc ~
 cp -Rv user_home/.icons        ~
+cp -v  user_home/.cvimrc       ~
+# cp -Rv user_home/.cvim         ~
