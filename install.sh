@@ -51,8 +51,6 @@ bash ./mplayer_config_generator.sh
 echo_cyan "smplayer"
 bash ./smplayer_config_generator.sh
 
-echo_cyan "transmission"
-bash ./transmission_daemon_conf_generator.sh
 
 echo_cyan "git"
 bash ./git_config_generator.sh
