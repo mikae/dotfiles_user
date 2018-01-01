@@ -7,7 +7,6 @@ print_info() {
     info underline
 
     info "OS" distro
-    info "Host" model
     info "Kernel" kernel
     info "Uptime" uptime
     info "Packages" packages

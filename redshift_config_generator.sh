@@ -1,17 +1,26 @@
 #!/usr/bin/env bash
 
-function make_config {
+function make_redshift_config {
+    REDSHIFT_CONFIG_TARGET=$HOME/.config/redshift.conf
+
+    rm $REDSHIFT_CONFIG_TARGET
+    touch $REDSHIFT_CONFIG_TARGET
+
+    echo "Enter latitude:"
+    read LATITUDE
+
+    echo "Enter longitude:"
+    read LONGITUDE
+
     cat > $REDSHIFT_CONFIG_TARGET << EOF
 [manual]
 lat=$LATITUDE
 lon=$LONGITUDE
 EOF
+
+    unset REDSHIFT_CONFIG_TARGET
+    unset LATITUDE
+    unset LONGITUDE
 }
 
-REDSHIFT_CONFIG_TARGET=$HOME/.config/redshift.conf
-LATITUDE=56.116766
-LONGITUDE=47.262782
-
-rm $REDSHIFT_CONFIG_TARGET
-touch $REDSHIFT_CONFIG_TARGET
-make_config
+make_redshift_config
