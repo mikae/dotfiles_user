@@ -51,18 +51,11 @@ bash ./mplayer_config_generator.sh
 echo_cyan "smplayer"
 bash ./smplayer_config_generator.sh
 
-
 echo_cyan "git"
 bash ./git_config_generator.sh
 
 echo_cyan "redshift"
 bash ./redshift_config_generator.sh
-
-echo_cyan "vimperator"
-SOURCE_VIMPERATOR_COLORS=https://github.com/mikae/vimperator-colors
-cp -Rv user_home/.vimperatorrc ~
-cp -Rv user_home/.vimperator   ~
-git clone $SOURCE_VIMPERATOR_COLORS ~/.vimperator/colors
 
 
 echo_cyan "other configs"
