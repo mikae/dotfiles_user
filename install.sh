@@ -57,11 +57,10 @@ bash ./git_config_generator.sh
 echo_cyan "redshift"
 bash ./redshift_config_generator.sh
 
-
 echo_cyan "other configs"
 cp -Rv user_home/.config       ~
 cp -Rv user_home/.Xresources   ~
 cp -Rv user_home/.jsbeautifyrc ~
 cp -Rv user_home/.icons        ~
-cp -v  user_home/.cvimrc       ~
-# cp -Rv user_home/.cvim         ~
+cp -Rv user_home/.eslintrc.js  ~
+cp -Rv user_home/.tern-project ~

@@ -1,9 +1,0 @@
-cd $HOME/.vimperator
-
-source default/mappings.vimp
-
-source config/settings.vimp
-source config/mappings.vimp
-source config/interface.vimp
-
-"source styles/styles.vimp

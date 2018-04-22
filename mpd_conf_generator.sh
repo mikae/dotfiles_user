@@ -43,7 +43,7 @@ function make_necessary_files {
     touch $MPD_STATE
 }
 
-MUSIC_DIR=/home2/data/Data/Music
+MUSIC_DIR=/home/data/Data/Music
 MPD_ROOT=$MUSIC_DIR/.mpd
 MPD_PLAYLIST_DIR=$MPD_ROOT/playlist
 

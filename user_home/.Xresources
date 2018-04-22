@@ -8,8 +8,9 @@ URxvt*scrollTtyKeypress: true
 
 ! Clickable URLs
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
+urxvt*matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
 
 ! Cursor
 Xcursor.theme: Pulse-Glass-Sapphire-Regular
